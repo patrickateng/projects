@@ -1,0 +1,156 @@
+.thumbnail {
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  font-size: 13px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px ;
+  cursor: pointer;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author,
+  .video-stats, 
+  .video-time, 
+  .p-two {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1201px) {
+    .video-grid {
+      margin-left: 201px;
+    }
+  }
+
+}
+
+
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 8px;
+  right: 5px;
+}
+
+.a-a {
+  color: rgb(96, 96, 96);
+}
+
+.channel-picture {
+  position: relative;
+}
+
+.channel-picture-div {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 210px;
+  height: 80px;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 0.3px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.channel-picture:hover .channel-picture-div {
+  opacity: 1;
+}
+
+.channel-pic-div1 {
+
+}
+
+.img-pic {
+  height: 60px;
+  border-radius: 40px;
+  padding: 5px;
+}
+.channel-div2 {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.p-one {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.p-two {
+  color: rgb(97, 97, 97);
+  font-size: 15px;
+  font-weight: 500;
+}
+

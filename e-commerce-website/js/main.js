@@ -41,7 +41,18 @@ function ready() {
     var button = addCart[i]
     button.addEventListener("click", addCartClicked)
   }
+  // Buy Button Work
+  document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked)
 }
+
+  // Buy Button
+  function buyButtonClicked() {
+    alert('Your order is placed')
+    var cartContent = document.getElementsByClassName('cart-content')[0]
+    while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild)
+    }
+  }
 
   // Remove Items From Cart
   function removeCartItem(event) {
@@ -85,7 +96,7 @@ function ready() {
                   <img src="${productImg}" alt="" class="cart-img">
                   <div class="detail-box">
                     <div class="cart-product-title">${title}</div>
-                    <div class="cart-price">$25.04</div>
+                    <div class="cart-price">${price}</div>
                     <input type="number" value="1" class="cart-quantity">
                   </div>
                   <!-- Remove Cart -->

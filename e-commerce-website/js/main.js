@@ -52,6 +52,7 @@ function ready() {
     while (cartContent.hasChildNodes()) {
       cartContent.removeChild(cartContent.firstChild)
     }
+    updateTotal()
   }
 
   // Remove Items From Cart
@@ -87,7 +88,7 @@ function ready() {
     var cartItems = document.getElementsByClassName("cart-content")[0]
     var cartItemsNames = cartItems.getElementsByClassName("cart-product-title")
     for (var i = 0; i < cartItemsNames.length; i++) {
-      if (cartItemsNames[i] == title) {
+      if (cartItemsNames[i].innerHTML === title) {
         alert("You have already added this item to cart")
         return
       }
@@ -120,9 +121,9 @@ function ready() {
       var price = parseFloat(priceElement.innerHTML.replace("$", ""))
       var quantity = quantityElement.value
       total = total + (price * quantity)
+    }
       // If Price Contains Some Cents
       total = Math.round(total * 100) / 100
 
       document.getElementsByClassName('total-price')[0].innerHTML = '$' + total
-    }
   }

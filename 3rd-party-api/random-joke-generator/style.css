@@ -18,7 +18,7 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 5px;
-  box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+  box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
 }
 
 span {
@@ -27,7 +27,7 @@ span {
   font-size: 100px;
 } 
 
-p {
+p{
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
@@ -39,7 +39,7 @@ p {
 } 
 
 .fade {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1.5s;
 }
 

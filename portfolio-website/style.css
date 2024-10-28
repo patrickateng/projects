@@ -235,4 +235,26 @@ section {
   cursor: pointer;
 }
 
-/* Cont. from 58:04 */
+.btn-color-1,
+.btn-color-2:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* Cont. from 1:01:11 */

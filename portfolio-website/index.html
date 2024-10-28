@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- NAV -->
     <nav id="desktop-nav">
       <div class="logo">Patrick A. Odhiambo</div>
       <div>
@@ -37,6 +38,25 @@
         </div>
       </div>
     </nav>
+    <!-- SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Patrick Odhiambo profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Patrick Odhiambo</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
 
   </body>
